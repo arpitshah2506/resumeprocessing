@@ -29,5 +29,8 @@ Welcome! This project demonstrates a **serverless resume processing pipeline** b
 ```mermaid
 graph TD
     A[Resume Upload to S3] --> B[Lambda Triggered]
-    B --> C[S3 Object Info Extracted]
-    C --> D[SQS Message Queued]
+    B --> C[SQS Message Queued]
+    C --> D[Spring Boot Consumer Service]
+    D --> E[Download Resume from S3]
+    E --> F[Extract Candidate Info (e.g., Name)]
+    F --> G[Update Status in PostgreSQL as 'Processed']
