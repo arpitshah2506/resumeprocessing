@@ -32,5 +32,6 @@ graph TD
     B --> C[SQS Message Queued]
     C --> D[Spring Boot Consumer Service]
     D --> E[Download Resume from S3]
-    E --> F[Extract Candidate Info (e.g., Name)]
-    F --> G[Update Status in PostgreSQL as 'Processed']
+    E --> F[Extract Candidate Info - Mock Name]
+    F --> G[Update Status in PostgreSQL]
+
