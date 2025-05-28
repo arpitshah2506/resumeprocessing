@@ -1,6 +1,6 @@
 # Resume Processing Pipeline – Serverless Java AWS Project
 
-Welcome! This project demonstrates a **serverless resume processing pipeline** built with **Spring Boot** and **AWS services** (S3, Lambda, SQS). It’s perfect for showcasing cloud architecture skills and hands-on experience with event-driven design.
+Welcome! This project demonstrates a serverless resume processing pipeline built with Spring Boot and AWS services (S3, Lambda, SQS). It’s perfect for showcasing cloud architecture skills and hands-on experience with event-driven design. While the upload and processing currently happen within a single service, the architecture is decoupled and easily extendable to support distributed components or microservices in the future.
 
 ---
 
